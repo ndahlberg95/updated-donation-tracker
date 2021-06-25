@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { useState } from 'react';
+import InputBox from './components/InputBox';
+import Footer from './components/Footer';
+import Graph from './components/Graph';
+import Header from './components/Header';
+import TopStats from './components/TopStats';
+import LoginPage from './components/LoginPage';
+
+
 
 function App() {
+  // See LoginPage to learn how this is being used.
+  const [authenticated, setLogin] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <LoginPage loggedIn={authenticated} />
+        {/* <LogoutPage loggedOut = {authenticated}/> */}
+        <Switch>
+          <Route exact path='/' component={LoginPage} />
+          {/* <Route exact path='/' component={TopStats} />
+        <Route exact path='/' component={InputBox} />
+        <Route exact path='/' component={Graph} />
+        <Route exact path='/' component={Footer} /> */}
+
+          <Header></Header>
+          <TopStats></TopStats>
+          <InputBox></InputBox>
+          <Graph></Graph>
+          <Footer></Footer>
+        </Switch>
+
+      </Router>
+
+      {/* <Router>
+       <Switch> */}
+      {/* <Route exact path = '/' component = { Main }/>
+         <Route exact path = '/footer' component = { Footer }/> */}
+      {/* </Switch>
+     </Router> */}
     </div>
   );
 }
