@@ -8,40 +8,24 @@ import Graph from './components/Graph';
 import Header from './components/Header';
 import TopStats from './components/TopStats';
 import LoginPage from './components/LoginPage';
-
+import LogoutPage from './components/LogoutPage';
 
 
 function App() {
-  // See LoginPage to learn how this is being used.
-  const [authenticated, setLogin] = useState(false)
-
   return (
     <div>
       <Router>
-        <LoginPage loggedIn={authenticated} />
-        {/* <LogoutPage loggedOut = {authenticated}/> */}
-        <Switch>
-          <Route exact path='/' component={LoginPage} />
-          {/* <Route exact path='/' component={TopStats} />
+
+        <Route exact path='/login' component={LoginPage} />
+        <Route exact path='/logout' component={LogoutPage} />
+        <Route exact path='/' component={Header} />
+        <Route exact path='/' component={TopStats} />
         <Route exact path='/' component={InputBox} />
         <Route exact path='/' component={Graph} />
-        <Route exact path='/' component={Footer} /> */}
-
-          <Header></Header>
-          <TopStats></TopStats>
-          <InputBox></InputBox>
-          <Graph></Graph>
-          <Footer></Footer>
-        </Switch>
+        <Route exact path='/' component={Footer} />
 
       </Router>
 
-      {/* <Router>
-       <Switch> */}
-      {/* <Route exact path = '/' component = { Main }/>
-         <Route exact path = '/footer' component = { Footer }/> */}
-      {/* </Switch>
-     </Router> */}
     </div>
   );
 }
