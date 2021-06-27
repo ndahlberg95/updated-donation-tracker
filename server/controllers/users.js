@@ -4,9 +4,7 @@ const router = require('express').Router();
 // router.use('/api', apiRoutes);
 
 router.get("/hello", (request, response) => {
-  response.send("Adios!")
+  response.send("Adios users!")
 });
-
-
 
 module.exports = router;
