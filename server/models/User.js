@@ -37,10 +37,6 @@ User.init(
             len: [4]
           }
         },
-        bio: {
-            type: DataTypes.STRING,
-            allowNull: true
-        }
       },
       
   {
