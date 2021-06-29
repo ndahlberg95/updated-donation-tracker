@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { useState } from 'react';
+import InputBox from './components/InputBox';
+import Footer from './components/Footer';
+import Graph from './components/Graph';
+import Header from './components/Header';
+import TopStats from './components/TopStats';
+import LoginPage from './components/LoginPage';
+import LogoutPage from './components/LogoutPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+
+        <Route exact path='/login' component={LoginPage} />
+        <Route exact path='/logout' component={LogoutPage} />
+        <Route exact path='/' component={Header} />
+        <Route exact path='/' component={TopStats} />
+        <Route exact path='/' component={InputBox} />
+        <Route exact path='/' component={Graph} />
+        <Route exact path='/' component={Footer} />
+
+      </Router>
+
     </div>
   );
 }

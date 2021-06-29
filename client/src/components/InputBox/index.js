@@ -1,53 +1,13 @@
 import React from 'react';
 
 
-function Main() {
-
-
-    // google.charts.load('current', { 'packages': ['bar'] });
-    // google.charts.setOnLoadCallback(drawChart);
-
-
-    // function drawChart() {
-    //   var data = google.visualization.arrayToDataTable([
-    //     ['Items', 'Leggings', 'Shampoo', 'Shoes'],
-    //     ['Yearly', 524, 627, 485],
-    //   ]);
-
-    //   var options = {
-    //     chart: {
-    //       title: "Last Year's Donated Items",
-    //       subtitle: 'Top 3 Items',
-    //     },
-    //     bars: 'horizontal' // Required for Material Bar Charts.
-    //   };
-
-    //   var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
-    //   chart.draw(data, google.charts.Bar.convertOptions(options));
-    // }
+function InputBox() {
 
     return (
 
         <body>
             <div className="column">
-                <div id="top-stats">
-                    <div id="need-most">
-                        <div id="min"></div>
-                        <h3>MOST NEEDED ITEM</h3>
-                    </div>
-
-                    <div id="total-donations">
-                        <div id="sum"></div>
-                        <h3>TOTAL DONATIONS</h3>
-                    </div>
-
-                    <div id="have-most">
-                        <div id="max"></div>
-                        <h3>MOST DONATED ITEM</h3>
-                    </div>
-                </div>
-
+            
                 {/* <!-- Donation Input Fields --> */}
                 <div>
                     <form>
@@ -99,4 +59,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default InputBox;
