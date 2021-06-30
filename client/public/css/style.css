@@ -3,18 +3,33 @@ header {
     background-color: #FA4616;
 }
 
+#logo {
+    padding: 30px;
+}
+
+#logout {
+    color: #FA4616;
+    background-color: white; 
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
 footer {
     padding: 100px;
     text-align: center;
 }
 
-#logo {
-    padding: 30px;
-}
+
+/* Graph */
 
 #item-graph {
     padding: 30px;
 }
+
+
+/* 3 Stats */
 
 #top-stats {
     display: flex;
@@ -53,6 +68,9 @@ footer {
 .myDIV {
   display: none;
 }
+
+
+/* Input Donation Form */
 
 #donation-input {
     width: 80%;
