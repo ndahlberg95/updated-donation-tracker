@@ -1,6 +1,6 @@
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React, { useState } from 'react';
 import InputBox from './components/InputBox';
 import Footer from './components/Footer';
