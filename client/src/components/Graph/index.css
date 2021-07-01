@@ -1,3 +1,8 @@
+.graphDiv {
+  display: flex;
+  justify-content: center;
+  padding:10px;
+}
 .item-graph {
     padding: 30px;
   }

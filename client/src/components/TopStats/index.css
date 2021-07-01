@@ -1,7 +1,7 @@
 .top-stats {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: right;
     padding-left: 50px;
   }
   
@@ -24,8 +24,7 @@
   }
   
   .have-most {
-    padding: 100px;
-    color: red;
+    padding: 100px; 
   }
   
   .max {

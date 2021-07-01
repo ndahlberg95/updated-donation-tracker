@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 // const input = document.getElementsByName('input')
 // const output = document.getElementById("item-name");

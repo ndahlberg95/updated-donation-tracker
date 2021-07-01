@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from '../../assets/images/logo-white.png'
+import logo from '../../assets/images/logo-white.png';
 import './index.css';
-
 
 
 
@@ -44,7 +43,7 @@ function Header() {
     {/* // Right side  */}
                 <div className="level-right">
                     <div className="card-image">
-                        <figure className="logoHeader">
+                        <figure className="image is-128x128">
                             <img src={logo} alt="YWCA Utah Logo"></img>
                         </figure>
                         <button className="logout">LOGOUT</button>
