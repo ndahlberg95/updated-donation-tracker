@@ -43,11 +43,11 @@ function InputBox() {
                                     </button>
 
                                     {/* <!--GIF Displayed--> */}
-                                    <div className="myDIV" className="myDIV">
+                                    {/* <div className="myDIV" className="myDIV">
                                         <iframe src="https://giphy.com/embed/l0MYt5jPR6QX5pnqM" width="480" height="270" frameBorder="0"
                                             className="giphy-embed" allowFullScreen></iframe>
                                         <p><a href="https://giphy.com/gifs/party-the-office-hard-l0MYt5jPR6QX5pnqM">via GIPHY</a></p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

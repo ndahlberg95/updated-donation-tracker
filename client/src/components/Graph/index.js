@@ -30,7 +30,7 @@ function Graph() {
         //Generating Chart
         const generateChart = () => {
             return (
-                <div style={{ display: 'flex', maxWidth: 900 }}>
+                <div className='graphDiv' style={{ display: 'flex', maxWidth: 900 }}>
                     <Chart
                         width={1500}
                         height={300}
