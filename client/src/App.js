@@ -16,13 +16,16 @@ function App() {
   return (
     <div>
       <Router>
-      
-        <Route exact path='/login' component={LoginPage} />
+
         <Route exact path='/' component={Header} />
-        <Route exact path='/' component={TopStats} />
-        <Route exact path='/' component={InputBox} />
-        <Route exact path='/' component={Graph} />
+        <Route exact path='/' component={LoginPage} />
         <Route exact path='/' component={Footer} />
+        <Route exact path='/main' component={Header} />
+        <Route exact path='/main' component={TopStats} />
+        <Route exact path='/main' component={InputBox} />
+        <Route exact path='/main' component={Graph} />
+        <Route exact path='/main' component={Footer} />
+        
 
       </Router>
 
