@@ -32,7 +32,7 @@ function Graph() {
             return (
                 <div className='graphDiv' style={{ display: 'flex', maxWidth: 900 }}>
                     <Chart
-                        width={1500}
+                        width={600}
                         height={300}
                         chartType="ColumnChart"
                         loader={<div>Loading Chart</div>}
