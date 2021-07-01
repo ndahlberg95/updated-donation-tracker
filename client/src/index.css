@@ -8,44 +8,48 @@ footer {
   text-align: center;
 }
 
-#logo {
+
+.logo {
+  padding: 30px;
+  margin: 1000px;
+  
+}
+
+.item-graph {
   padding: 30px;
 }
 
-#item-graph {
-  padding: 30px;
-}
-
-#top-stats {
+.top-stats {
   display: flex;
   flex-direction: row;
   text-align: center;
   padding-left: 50px;
 }
 
-#need-most {
+.need-most {
   padding: 100px;
 }
 
-#min {
+.min {
   font-size: 50px;
   font-weight: bold;
 }
 
-#total-donations {
+.total-donations {
   padding: 100px;
 }
 
-#sum {
+.sum {
   font-size: 50px;
   font-weight: bold; 
 }
 
-#have-most {
+.have-most {
   padding: 100px;
+  color: red;
 }
 
-#max {
+.max {
   font-size: 50px;
   font-weight: bold; 
 }
@@ -54,7 +58,7 @@ footer {
 display: none;
 }
 
-#donation-input {
+.donation-input {
   width: 80%;
 }
 
@@ -126,7 +130,7 @@ form button {
   color: #fff;
 }
 
-#donation-input {
+.donation-input {
 background-color: #CCCCCC;
 width: 550px;
 margin: 1.5%;
