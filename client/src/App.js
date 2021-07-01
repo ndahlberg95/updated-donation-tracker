@@ -8,7 +8,7 @@ import Graph from './components/Graph';
 import Header from './components/Header';
 import TopStats from './components/TopStats';
 import LoginPage from './components/LoginPage';
-import LogoutPage from './components/LogoutPage';
+
 
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
       <Router>
       
         <Route exact path='/login' component={LoginPage} />
-        <Route exact path='/logout' component={LogoutPage} />
         <Route exact path='/' component={Header} />
         <Route exact path='/' component={TopStats} />
         <Route exact path='/' component={InputBox} />

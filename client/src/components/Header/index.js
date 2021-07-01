@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from '../../assets/images/logo-white.png'
+import './index.css';
+
+
 
 
 async function logout() {
@@ -17,9 +20,9 @@ async function logout() {
     // when you logout, you are taken to "Login"
 }
   
-  document.querySelector('#logout').addEventListener('click', logout);
+//   document.querySelector('#logout').addEventListener('click', logout);
 
-  
+
 function Header() {
     return ( 
         <header className="header">
@@ -41,7 +44,7 @@ function Header() {
     {/* // Right side  */}
                 <div className="level-right">
                     <div className="card-image">
-                        <figure className="image is-128x128">
+                        <figure className="logoHeader">
                             <img src={logo} alt="YWCA Utah Logo"></img>
                         </figure>
                         <button className="logout">LOGOUT</button>
