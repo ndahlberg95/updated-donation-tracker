@@ -1,4 +1,6 @@
 import React from 'react';
+import './index.css';
+
 function TopStats() {
     return (
         <div className="top-stats">

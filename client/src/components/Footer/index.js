@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment'
 import Moment from 'react-moment';
-// import './index.css'
+import './index.css'
 
 function Footer() {
   const currentDateTime = moment()
