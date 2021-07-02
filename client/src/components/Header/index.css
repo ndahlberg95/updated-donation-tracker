@@ -6,3 +6,13 @@ header {
   padding: 30px;
   height: 128px;
 }
+
+button {
+  color: white;
+  background-color: #CCCCCC; 
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  float: right;
+}

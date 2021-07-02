@@ -47,7 +47,6 @@ function Header() {
                             <img src={logo} alt="YWCA Utah Logo"></img>
                         </figure>
                         <button className="logout">LOGOUT</button>
-
                     </div>
                 </div>
             </nav>

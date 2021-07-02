@@ -33,7 +33,7 @@ function Graph() {
             <div className='graphDiv' style={{ display: 'flex', maxWidth: 900 }}>
                 <Chart
                     width={'500px'}
-                    height={'300px'}
+                    height={'500px'}
                     chartType="Bar"
                     loader={<div>Loading Chart</div>}
                     data={[
@@ -49,6 +49,7 @@ function Graph() {
                             title: 'Number of Donated Items',
                             subtitle: ':)',
                         },
+                        colors: ['#014E76']
                     }}
                     // For tests
                     rootProps={{ 'data-testid': '2' }}
