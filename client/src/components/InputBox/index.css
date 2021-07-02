@@ -55,7 +55,7 @@ margin: 8px 0;
 box-sizing: border-box;
 }
 
-form button {
+.save {
   color: white;
   background-color: #FA4616; 
   border: none;
