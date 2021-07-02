@@ -1,12 +1,23 @@
 .flex {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     /* justify-content: right; */
     /* color: red; */
 }
+
+.mainPage {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
 .mainTopStatsInput {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: column;
+    align-items: center;
+}
 
-    
+.mainGraph {
+    display: flex;
 }

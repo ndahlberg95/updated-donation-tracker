@@ -14,18 +14,19 @@ form {
 
 form h3 {
   font-size: 24px;
+  font-weight: bold;
   margin: 0;
-  color: black;
+  color: #014E76;
   font-style: sans-serif;
 }
 
 form p {
   margin: 5px 0 15px 0;
-  color: black;
+  color: #014E76;
 }
 
 form-input {
-  border: 1px solid #024E76;
+  border: 1px solid black;
   display: block;
   padding: 7px 15px;
   font-size: 16px;

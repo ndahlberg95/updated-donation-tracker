@@ -5,31 +5,14 @@
     padding-left: 50px;
   }
   
-  .need-most {
+  .need-most, .total-donations, .have-most {
     padding: 100px;
+    text-align: center;
   }
   
-  .min {
+  .min, .sum, .max {
     font-size: 50px;
     font-weight: bold;
-  }
-  
-  .total-donations {
-    padding: 100px;
-  }
-  
-  .sum {
-    font-size: 50px;
-    font-weight: bold; 
-  }
-  
-  .have-most {
-    padding: 100px; 
-  }
-  
-  .max {
-    font-size: 50px;
-    font-weight: bold; 
   }
   
   .myDIV {

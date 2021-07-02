@@ -8,13 +8,19 @@ import './index.css';
 function Main() {
     return (
         <div className="flex">
+            
             <div className="mainHeader"> <Header /> </div>
-            <div className="mainTopStatsInput">
-                <TopStats />
-                <InputBox />
-                <Graph />
+            
+            <div className="mainPage">
+                <div className="mainGraph">
+                    <Graph />
+                </div>
+                <div className="mainTopStatsInput">
+                    <TopStats />
+                    <InputBox />
+                </div>
             </div>
-            {/* <div className="mainGraph"></div> */}
+
             <div className="mainFooter"><Footer /></div>
         </div>
 
