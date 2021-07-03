@@ -11,6 +11,9 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+app = express()
+app.use(express.static('reactFolderName/build'));
+app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'reactFolderName', 'build', 'index.html')));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
