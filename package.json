@@ -6,12 +6,14 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ndahlberg95/updated-donation-tracker.git"
   },
+
   "author": "Chinchillas",
   "license": "ISC",
   "bugs": {
@@ -19,3 +21,4 @@
   },
   "homepage": "https://github.com/ndahlberg95/updated-donation-tracker#readme"
 }
+
