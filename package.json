@@ -1,0 +1,21 @@
+{
+  "name": "updated-donation-tracker",
+  "version": "1.0.0",
+  "description": "TracksDonations",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndahlberg95/updated-donation-tracker.git"
+  },
+  "author": "Chinchillas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndahlberg95/updated-donation-tracker/issues"
+  },
+  "homepage": "https://github.com/ndahlberg95/updated-donation-tracker#readme"
+}
