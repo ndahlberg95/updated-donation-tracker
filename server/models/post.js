@@ -1,15 +1,23 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
+var Schema = mongoose.Schema;
 
-const schema = mongoose.Schema({
-    itemName: String,
-    itemType: String,
-    quantity: Number,
-    size: String,
-    color: String,
-    timeDate:String
+var ItemSchema = new Schema(
+  {
+    name: {type: String, required: true},
+    kind: {type: String, required: true},
+    quantity: {type: Number, required: true},
+    size: {type: String, required: true},
+    color: [{type: Schema.Types.ObjectId, ref: 'Color'}]
+  }
+);
 
-})
+// Virtual for Item's URL
+ItemSchema
+.virtual('url')
+.get(function () {
+  return '/catalog/items/' + this._id;
+});
 
-
-module.exports = mongoose.model("Post", schema)
+//Export model
+module.exports = mongoose.model('Item', ItemSchema);

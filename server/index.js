@@ -1,12 +1,12 @@
 const express = require("express");
 const mongoose = require('mongoose');
-const routes = require("./controllers/index")
+const routes = require("./controllers/itemsController")
 const userRoutes = require("./controllers/users")
 
 var app = express();
 const PORT = 3001;
 
-mongoose.connect('mongodb+srv://dsanchezjr99:Mcc0nkie!1999@donation-tracker.q1dnm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true}).then (()=>console.log("Yippee!!!"))
+mongoose.connect('mongodb+srv://dsanchezjr99:Mcc0nkie!1999@donation-tracker.q1dnm.mongodb.net/donations?retryWrites=true&w=majority', {useNewUrlParser: true}).then (()=>console.log("Yippee!!!"))
 
 app.get("/", (request, response) => {
     response.send("Hello!")
