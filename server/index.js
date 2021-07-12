@@ -4,7 +4,7 @@ const routes = require("./controllers/index")
 const userRoutes = require("./controllers/users")
 
 var app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 mongoose.connect('mongodb+srv://dsanchezjr99:Mcc0nkie!1999@donation-tracker.q1dnm.mongodb.net/donations?retryWrites=true&w=majority', {useNewUrlParser: true}).then (()=>console.log("Yippee!!!"))
 
